@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <title>Review sentiment analysis</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="static/images/icons/cat.png"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/css/util.css">
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+
+  <style>
+    body{
+      background-image: url("static/images/gifs/nn_dance.gif"), url("static/images/gifs/nn_dance.gif");
+      background-size: auto;
+      background-position: 95% 10%, 5% 10%;
+      /* background-position: right center, left center; */
+      background-size: 20%;
+      background-attachment: inherit;
+      background-repeat: no-repeat, no-repeat;
+      background-color: #FFFFFF;
+    }
+  </style>
+
+  <div id="example1" class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table100">
+          <div style="max-width:25%; margin-left: auto; margin-right: auto;">
+            <center>
+              <img src="static/images/images/faces.svg" alt="Faces" width="500" height="250">
+            </center>
+          </div>
+
+  <form action="/">
+    <div style="text-align: center;">
+      <br>
+        <h1 class="headertext">Reviews Classifier</h1>
+        <br>
+        Input a review to get its sentiment:
+        <br>
+        <br>
+        <center>
+          <input align = "center" type="text" name="chat_in" autofocus="autofocus" value="{{x_input}}" maxlength="500" id="rcorners2">
+        </center>
+    <br>
+    <!-- Submit button -->
+    <center>
+    <input align="center" type="submit" value="Submit" method="get" id="rcorners1">
+  </center>
+    <br>
+
+  </form>
+    </div>
+    <!-- {% for p in prediction %}
+      <br>  {{p['name']}}:{{ (100*p['prob']) | round }}%
+    {% endfor %} -->
+  </p>
+          <table align="center">
+            <thead>
+              <tr class="table100-head">
+                <th class="column1">String Input</th>
+                <th colspan="2" class="column1">Sentiment Levels (Predictions)</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td rowspan="6" class="column1">{{ chat_in }}</td>
+                  <!-- <td rowspan="6" class="column1">{{ chat_in }}</td> -->
+                  <td class="column1">{{prediction[0]['name']}}</td>
+                  <td class="column2">{{ (100 * prediction[0]['prob']) | round}}%</td>
+                </tr>
+                <tr>
+                  <td class="column1">{{prediction[1]['name']}}</td>
+                  <td class="column2">{{ (100 * prediction[1]['prob']) | round}}%</td>
+                </tr>
+                <tr>
+                  <td class="column1">{{prediction[2]['name']}}</td>
+                  <td class="column2">{{ (100 * prediction[2]['prob']) | round}}%</td>
+            </tbody>
+          </table>
+          <br>
+          <div style="text-align: center; color: #808080;">
+          <a href="https://www.linkedin.com/in/fernando-gonzalez-b6baaa61/">Fernando Gonzalez</a> adapted from
+          <a href="https://github.com/jeremyrchow/Harassment-Classifier-App/">Harrasment app</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--===============================================================================================-->
+  <script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/bootstrap/js/popper.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/js/main.js"></script>
+
+</body>
+</html>
