@@ -2,25 +2,31 @@
 
 ## Notebooks
 
-#### EDA: Exploratory data analysis
+#### EDA
+Exploratory data analysis
 
-#### TFIDF_MODEL: Models built on TFIDF
+#### TFIDF_MODEL
+Models built on TFIDF
 
-#### DOC2VEC_SENTENCE: Models built on doc2vec embeddings using sentences as documents
+#### DOC2VEC_SENTENCE
+Models built on doc2vec embeddings using sentences as documents
 
-#### DOC2VEC_PARAGRAPH: Models built on doc2vec embeddings using reviews as documents
+#### DOC2VEC_PARAGRAPH
+Models built on doc2vec embeddings using reviews as documents
 
-#### VADER: Models built on VADER lexicon
+#### VADER
+Models built on VADER lexicon
 
-#### LDA: Topic extraction using LDA.
+#### LDA
+Topic extraction using LDA.
 
 ## Folders
 
-#### API: Webapp to use the best model on arbitrary reviews submited by the user
+#### API
+Webapp to use the best model on arbitrary reviews submited by the user
 
-#### Data: Projected datasets
-
-#### Gridsearch: Results from the hyperparams optimization
+#### Gridsearch
+Results from the hyperparams optimization
 
 ## Models
 
