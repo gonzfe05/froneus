@@ -38,7 +38,7 @@ Results from the hyperparams optimization
 
 ## Models
 
-#### Due to space restrictions, download the doc2vec paragraph model from https://drive.google.com/open?id=1oaBuJ-FkePz6Kn02Uec6quGt-XQ1HIA5
+#### Due to space restrictions, download the doc2vec paragraph model from https://drive.google.com/open?id=1oaBuJ-FkePz6Kn02Uec6quGt-XQ1HIA5 and the challenge data from https://drive.google.com/file/d/1vcVlI4WMpPT3grXGRvzc3vuSjFflQF_Y/view?usp=sharing
 
 
 
